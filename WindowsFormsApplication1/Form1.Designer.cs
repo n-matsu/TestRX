@@ -28,69 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.rdoEllipse = new System.Windows.Forms.RadioButton();
-            this.rdoRect = new System.Windows.Forms.RadioButton();
-            this.rdoLine = new System.Windows.Forms.RadioButton();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.rdoEllipse);
-            this.panel1.Controls.Add(this.rdoRect);
-            this.panel1.Controls.Add(this.rdoLine);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(267, 24);
-            this.panel1.TabIndex = 0;
-            // 
-            // rdoEllipse
-            // 
-            this.rdoEllipse.AutoSize = true;
-            this.rdoEllipse.Location = new System.Drawing.Point(196, 5);
-            this.rdoEllipse.Name = "rdoEllipse";
-            this.rdoEllipse.Size = new System.Drawing.Size(57, 16);
-            this.rdoEllipse.TabIndex = 0;
-            this.rdoEllipse.TabStop = true;
-            this.rdoEllipse.Text = "Ellipse";
-            this.rdoEllipse.UseVisualStyleBackColor = true;
-            // 
-            // rdoRect
-            // 
-            this.rdoRect.AutoSize = true;
-            this.rdoRect.Location = new System.Drawing.Point(94, 5);
-            this.rdoRect.Name = "rdoRect";
-            this.rdoRect.Size = new System.Drawing.Size(74, 16);
-            this.rdoRect.TabIndex = 0;
-            this.rdoRect.TabStop = true;
-            this.rdoRect.Text = "Rectangle";
-            this.rdoRect.UseVisualStyleBackColor = true;
-            // 
-            // rdoLine
-            // 
-            this.rdoLine.AutoSize = true;
-            this.rdoLine.Checked = true;
-            this.rdoLine.Location = new System.Drawing.Point(15, 5);
-            this.rdoLine.Name = "rdoLine";
-            this.rdoLine.Size = new System.Drawing.Size(44, 16);
-            this.rdoLine.TabIndex = 0;
-            this.rdoLine.TabStop = true;
-            this.rdoLine.Text = "Line";
-            this.rdoLine.UseVisualStyleBackColor = true;
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 404);
-            this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.rdoEllipse = new System.Windows.Forms.RadioButton();
+			this.rdoRect = new System.Windows.Forms.RadioButton();
+			this.rdoLine = new System.Windows.Forms.RadioButton();
+			this.panel1.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// panel1
+			// 
+			this.panel1.Controls.Add(this.rdoEllipse);
+			this.panel1.Controls.Add(this.rdoRect);
+			this.panel1.Controls.Add(this.rdoLine);
+			this.panel1.Location = new System.Drawing.Point(12, 13);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(267, 26);
+			this.panel1.TabIndex = 0;
+			// 
+			// rdoEllipse
+			// 
+			this.rdoEllipse.AutoSize = true;
+			this.rdoEllipse.Location = new System.Drawing.Point(196, 5);
+			this.rdoEllipse.Name = "rdoEllipse";
+			this.rdoEllipse.Size = new System.Drawing.Size(55, 17);
+			this.rdoEllipse.TabIndex = 0;
+			this.rdoEllipse.TabStop = true;
+			this.rdoEllipse.Text = "Ellipse";
+			this.rdoEllipse.UseVisualStyleBackColor = true;
+			// 
+			// rdoRect
+			// 
+			this.rdoRect.AutoSize = true;
+			this.rdoRect.Location = new System.Drawing.Point(94, 5);
+			this.rdoRect.Name = "rdoRect";
+			this.rdoRect.Size = new System.Drawing.Size(74, 17);
+			this.rdoRect.TabIndex = 0;
+			this.rdoRect.TabStop = true;
+			this.rdoRect.Text = "Rectangle";
+			this.rdoRect.UseVisualStyleBackColor = true;
+			// 
+			// rdoLine
+			// 
+			this.rdoLine.AutoSize = true;
+			this.rdoLine.Checked = true;
+			this.rdoLine.Location = new System.Drawing.Point(15, 5);
+			this.rdoLine.Name = "rdoLine";
+			this.rdoLine.Size = new System.Drawing.Size(45, 17);
+			this.rdoLine.TabIndex = 0;
+			this.rdoLine.TabStop = true;
+			this.rdoLine.Text = "Line";
+			this.rdoLine.UseVisualStyleBackColor = true;
+			// 
+			// Form1
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.White;
+			this.ClientSize = new System.Drawing.Size(673, 438);
+			this.Controls.Add(this.panel1);
+			this.Name = "Form1";
+			this.Text = "Form1";
+			this.Load += new System.EventHandler(this.Form1_Load);
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
+			this.ResumeLayout(false);
 
         }
 
