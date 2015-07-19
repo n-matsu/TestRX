@@ -34,20 +34,26 @@ namespace WindowsFormsApplication1
 					h => this.MouseUp += (s, args) => h(args),
 					h => this.MouseUp -= (s, args) => h(args)
 					);
-			mousemove
-			.SkipUntil(mousedown)
-			.TakeUntil(mouseup)
-			.Select(evt => evt.Location)
-			.Buffer(2, 1)
-			.Repeat()
-			.Where(points => rdoLine.Checked && points.Count > 1)
-			.Subscribe(points => this.DrawLine(points[0], points[1]));
+			//mousemove
+			//.SkipUntil(mousedown)
+			//.TakeUntil(mouseup)
+			//.Select(evt => evt.Location)
+			//.Buffer(2, 1)
+			//.Repeat()
+			//.Where(points => rdoLine.Checked && points.Count > 1)
+			//.Subscribe(points => this.DrawLine(points[0], points[1]));
 
 			var mousedrag = 
 			mousemove
 			.SkipUntil(mousedown)
 			.CombineLatest(mousedown, (evt, evt2) => new { downAt = evt2.Location, moveAt = evt.Location })
 			.TakeUntil(mouseup);
+
+			mousedrag
+			.Buffer(2, 1)
+			.Repeat()
+			.Where(points => rdoLine.Checked && points.Count > 1)
+			.Subscribe(points => this.DrawLine(points[0].moveAt, points[1].moveAt));
 
 			mousedrag
 			.Select(p => new { downAt = p.downAt, moveAt = p.moveAt, shape = this.GetSelectedShape() })
